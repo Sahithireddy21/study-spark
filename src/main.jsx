@@ -55,7 +55,8 @@ function App() {
     setError('');
 
     try {
-      const response = await fetch('/api/generate-study-set', {
+      const apiUrl = import.meta.env.VITE_API_URL || '';
+      const response = await fetch(`${apiUrl}/api/generate-study-set`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ notes })
