@@ -1,0 +1,24 @@
+{
+  "name": "study-spark",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npm run build && node server/index.js",
+    "client": "vite --host 127.0.0.1 --configLoader runner",
+    "server": "node server/index.js",
+    "build": "vite build --configLoader runner",
+    "preview": "vite preview --host 127.0.0.1 --configLoader runner"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "vite": "^6.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {}
+}
